@@ -1,0 +1,61 @@
+.welcome-header {
+  margin: 90px 0px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.welcome-header__title {
+  margin-bottom: 30px;
+  font-size: 25px;
+}
+
+.welcome-header__text {
+  width: 60%;
+  opacity: 0.6;
+}
+
+#login-form {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 30px;
+}
+
+#login-form input {
+  border: none;
+  padding: 15px 0px;
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+
+/* submit 타입이 아닌 경우에만 적용할 수 있도록 한다. */
+#login-form input:not([type="submit"]) {
+  border-bottom: 1.5px solid rgba(0, 0, 0, 0.2);
+  /* CSS 속성을 변경할 때 애니메이션의 '속도'를 조절한다. */
+  transition: border-color 0.4s ease-in-out;
+}
+
+/* placeholder의 글자색을 default값 보다 더 연하게 조정 */
+#login-form input::placeholder {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+/* input을 '클릭'했을 때의 border-color 설정(변화) */
+#login-form input:focus {
+  border-color: var(--yellow);
+}
+
+#login-form input[type="submit"] {
+  background-color: var(--yellow);
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+#login-form a {
+  text-align: center;
+  text-decoration: none;
+  /* anchor Tag가 부모 요소의 색상을 상속받는다.(default는 black)  */
+  color: inherit;
+  font-size: 13px;
+}

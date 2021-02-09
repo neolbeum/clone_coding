@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More - KokoaTalk</title>
+</head>
+<body>
+    <!-- 모든 페이지에 존재 -->
+    <div class="status-bar">
+        <div class="status-bar__column">
+            <span>No Service</span>
+            <!-- Wifi icon -->
+            <i class="fas fa-wifi"></i>
+        </div>
+        <div class="status-bar__column">
+            <span>18:43</span>
+        </div>
+        <div class="status-bar__column">
+            <span>96%</span>
+            <!-- Battery Icon -->
+            <i class="fas fa-battery-full"></i>
+            <!-- Charging Icon -->
+            <i class="fas fa-bolt"></i>
+        </div>
+    </div>
+
+    <header  class="screen-header">
+        <h1 class="screen-header__title">More</h1>
+        <div class="screen-header__icons">
+            <span><i class="fas fa-search fa-2x"></i></span>
+            <span><i class="fas fa-music fa-2x"></i></span>
+            <span><a href="settings.html"><i class="fas fa-cog fa-2x"></i></span></a>
+            <span class="screen-header__point"> </span>
+        </div>
+    </header>
+
+    <div class="user-component">
+        <div class="user-component__column">
+            <img src="https://blog.kakaocdn.net/dn/bnAIOZ/btqCqNxdgtJ/yapcUf92Rmi20VDDc53oj0/img.jpg"
+            alt="profile-photo"
+            class="user-component__profile user-component__profile--xl">
+            <div class="user-component__text">
+                <h4 class="user-component__name">Neolbeum Kim</h4>
+                <div class="user-component__phone-num">
+                    <h6 class="user-component__subtitle">+82 10-9650-2900</h6>
+                    <i class="fas fa-exclamation-circle"></i>
+                </div>
+            </div>
+            <div class="friends-screen">
+            </div>
+        </div>
+        <div class="user-component__column">
+            <i class="far fa-comment-alt fa-2x"></i>
+        </div>
+    </div>
+    <!-- end of profile -->
+
+    <!-- main and more -->
+    <main class="main-screen more-screen">
+        <div class="icon-row">
+            <div class="icon-row__icon">
+                <i class="far fa-calendar-alt"></i>
+                <span>Calendar</span>
+            </div>
+            <div class="icon-row__icon">
+                <i class="far fa-folder-open"></i>
+                <span>Talk Drive</span>
+            </div>
+            <div class="icon-row__icon">
+                <i class="far fa-smile"></i>
+                <span>Emotions</span>
+            </div>
+            <div class="icon-row__icon">
+                <i class="fas fa-brush"></i>
+                <span>Themes</span>
+            </div>
+        </div>
+
+        <div class="suggestions">
+            <h4 class="suggestions_title">Suggestions</h4>
+            <div class="suggestions__icons">
+                <div class="suggestions__icon">
+                    <div class="suggestions__icon-image">
+                        <i class="fas fa-quote-right"></i>
+                    </div>
+                    <span class="suggestions__icon-text">Kokoa Story</span>
+                </div>
+                <div class="suggestions__icon">
+                    <div class="suggestions__icon-image">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <span class="suggestions__icon-text">Kokoa Games</span>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- end of main -->
+    
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__btn">
+                <a class="nav__link" href="friends.html">
+                    <i class="far fa-user fa-2x"></i>
+                </a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="chats.html">
+                    <span class="nav__notification badge">3</span>
+                    <i class="far fa-comment fa-2x"></i>
+                </a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="find.html">
+                    <i class="fas fa-search fa-2x"></i>
+                </a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="more.html">
+                    <span class="nav__point"> </span>
+                    <i class="fas fa-ellipsis-h fa-2x"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="no-mobile">
+        <span>Your Screen Is Too Big :(</span>
+    </div>
+
+    <!-- Kit Code -->
+    <script src="https://kit.fontawesome.com/39b799a015.js" crossorigin="anonymous"></script>
+</body>
+</html>

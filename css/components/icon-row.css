@@ -1,0 +1,25 @@
+.icon-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon-row__icon {
+  display: flex;
+  /* flex-direction: column, 따라서 main-aixs가 세로축이다. */
+  /* 가로축이 cross-axis */
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 아이콘의 사이즈를 변경 */
+.icon-row__icon i {
+  font-size: 30px;
+}
+
+.icon-row__icon span {
+  margin-top: 15px;
+}
+
+.icon-row.icon-row__second-row {
+  display: flex;
+}

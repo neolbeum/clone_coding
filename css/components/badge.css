@@ -1,0 +1,14 @@
+.badge {
+  background-color: tomato;
+  width: 30px;
+  height: 30px;
+  /* 사각형을 원으로 만들고 싶다면, border-radius: (width/2) */
+  border-radius: 15px;
+  display: flex;
+  /* 'main-axis'의 정렬방법을 설정 */
+  justify-content: center;
+  /* 'cross-axis'의 정렬방법을 설정 */
+  align-items: center;
+  color: white;
+  font-weight: 600;
+}

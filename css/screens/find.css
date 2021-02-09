@@ -1,0 +1,122 @@
+.recommended-friends {
+  margin: 25px 0px;
+  padding: 25px 0px;
+  border-top: var(--main-border);
+  border-bottom: var(--main-border);
+}
+
+.recommended-friends__title {
+  font-size: 15px;
+  color: var(--gray-text);
+}
+
+.recommended-friends span {
+  display: block;
+  margin: 110px 0px;
+  text-align: center;
+  color: var(--gray-text);
+}
+
+.open-chat__header {
+  display: flex;
+  justify-content: space-between;
+  color: var(--gray-text);
+  margin-bottom: 25px;
+}
+
+.open-post {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.open-post__title {
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.open-post__hashtags {
+  text-transform: uppercase;
+  color: var(--gray-text);
+}
+
+.open-post__members {
+  margin-top: 7px;
+  display: flex;
+  align-items: center;
+}
+
+.open-post__members img {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.open-post__members-count {
+  color: var(--gray-text);
+  font-size: 13px;
+}
+
+/* '기호'가 아니라 배경색을 통해 divider를 생성 */
+.open-post__members .divider {
+  width: 1.5px;
+  height: 12px;
+  background-color: gray;
+  margin: 0px 5px;
+}
+
+.open-post__member-status {
+  color: hotpink;
+}
+
+/* 자식요소인 open-post__likes의 position:absolute 지정을 위해서 반드시 필요한 부분 */
+.open-post__photo {
+  position: relative;
+}
+
+.open-post__photo img {
+  width: 120px;
+  height: 120px;
+  border-radius: 9px;
+}
+
+.open-post__likes {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 6px 8px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  /* absolute children은 반드시 relative parents 가 필요하다.
+  따라서 부모요소인 open-post__photo가 position:relative로 설정되어야 한다. */
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+}
+
+.open-post__likes span {
+  margin-left: 5px;
+}
+
+@keyframes heartBeat {
+  0% {
+    color: white;
+    transform: none;
+  }
+  50% {
+    color: tomato;
+    transform: scale(1.5);
+  }
+  100% {
+    color: white;
+    transform: none;
+  }
+}
+
+.open-post__likes:hover i {
+  /* 부드러운 움직임을 위해서 필요한 요소 */
+  will-change: transform;
+  animation: heartBeat 1.2s linear infinite;
+}
